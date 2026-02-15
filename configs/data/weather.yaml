@@ -1,0 +1,36 @@
+
+S_max: 
+  abs-r: 5
+  pcp: 5
+  pcp-u: 5
+dynamic_S_max: true
+
+T_obs: 200
+start_t: 30
+seeds:
+  - 1
+  - 2
+  - 3
+  - 4
+
+H: 16
+N: 1
+alphas:
+- 0.9
+- 0.8
+- 0.7
+- 0.6
+- 0.5
+- 0.4
+- 0.3
+- 0.2
+- 0.1
+- 0.05
+- 0.02
+
+
+data_path: "data/weather/weather_base_pred.csv"
+# target_regions:
+#   - "US"
+start_idx: 0
+end_idx: 300

@@ -1,0 +1,18 @@
+skip: {}
+
+datas:
+  - weather
+
+pretrain_fractions:
+  - 0
+
+config_ids:
+  - 70
+
+methods:
+  - dtaci
+
+batch_size: 2
+iters: 500
+output_id_base: 3000
+output_id_step: 100

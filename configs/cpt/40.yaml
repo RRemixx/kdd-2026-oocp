@@ -1,0 +1,40 @@
+# Best config for markovar dataset
+expand_boundaries_values:
+  - 0
+power: 0
+B: 50
+gamma: 0.2
+br_learning_rate: 0.2
+var_a: 1
+d_factor: 1
+score_window: 20
+optim_arg:
+  mode: kernel
+  knn_k: 20
+  kernel_sigma: 1.8 # 0.9
+  eps: 0.00000001
+  max_additional_context: 1000
+  weight_threshold: 0.5 # 0.3
+  
+  # context settings
+  traj_type: scores
+  data_options:
+    scores:
+      use: false
+      context_size: 8
+      context_option: line
+    ground_truth:
+      use: false
+    betas:
+      use: false
+    preds:
+      use: true
+      context_size: 8
+
+  e_coeff: 1000
+  r_coeff: 3
+
+score_func_args:
+  type: abs-r
+  optional_args:
+    quantile_d: 0.2

@@ -1,0 +1,17 @@
+data_path: data/lane_data.npz
+
+S_max: 
+  abs-r: 2
+  pcp: 2
+  pcp-u: 2
+
+T_obs: 11
+start_t: 2
+
+H: 5
+N: 9
+
+max_cases: 500  # 500
+twodim: true
+
+score_func_type: 'pcp'

@@ -1,0 +1,20 @@
+skip: {}
+
+datas:
+  - lane
+
+pretrain_fractions:
+  - 0.5
+
+config_ids:
+  - 40
+
+methods:
+  - dtaci
+  - cpt
+  - cpid
+
+batch_size: 2
+iters: 500
+output_id_base: 4000
+output_id_step: 100

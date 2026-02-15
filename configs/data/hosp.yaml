@@ -1,0 +1,20 @@
+data_path: "data/hosp/210.csv"
+target_regions:
+  - "US"
+start_epiweek: "202240"
+end_epiweek: "202550"
+seeds:
+  - 1
+  - 2
+  - 3
+  - 4
+S_max: 
+  abs-r: 27000
+  pcp: 21000
+  pcp-u: 5000000
+dynamic_S_max: true
+
+T_obs: 160
+start_t: 10
+H: 8
+N: 1

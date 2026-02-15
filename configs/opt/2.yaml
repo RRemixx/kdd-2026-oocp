@@ -1,0 +1,23 @@
+skip: {}
+
+datas:
+  - lane
+  - cyclone
+
+pretrain_fractions:
+  - 0.5
+  - 0.66
+
+config_ids:
+  - 40
+  - 50
+
+methods:
+  - dtaci
+  - cpt
+  - cpid
+
+batch_size: 8
+iters: 500
+output_id_base: 1000
+output_id_step: 100

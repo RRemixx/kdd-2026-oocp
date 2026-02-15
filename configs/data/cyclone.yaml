@@ -1,0 +1,17 @@
+pkl_path: data/cyclone/2/filtered_cyclone_data.pkl
+# pkl_path: data/cyclone/large_ensemble/filtered_cyclone_data.pkl
+
+
+T_obs: 50
+S_max:
+  abs-r: 0.5
+  pcp: 0.8
+  pcp-u: 0.7
+
+H: 8
+N: 5
+
+twodim: true
+start_t: 1
+
+score_func_type: 'pcp'

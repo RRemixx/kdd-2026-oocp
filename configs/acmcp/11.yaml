@@ -1,0 +1,32 @@
+# Best config for markovar dataset
+expand_boundaries_values:
+  - -1
+power: 0.3
+B: 200
+br_learning_rate: 0.5
+var_a: 0.3
+
+gamma: 0.05
+# br_learning_rate: 0.2
+d_factor: 1
+score_window: 1000
+
+optim_arg:
+  e_coeff: 0.01
+  r_coeff: 0.1
+optional_args:
+  # Integer values
+  ncal: 3
+
+  # Boolean flags
+  rolling: false
+  scorecast: true
+  integrate: true
+
+  # Floating point values
+  Csat: 1.0
+  KI: 0.1
+score_func_args:
+  type: pcp
+  optional_args:
+    quantile_d: 0.2
